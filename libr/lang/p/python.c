@@ -78,6 +78,7 @@ static bool getB(PyObject *o, const char *name) {
 #include "python/anal.c"
 #include "python/bin.c"
 #include "python/core.c"
+#include "python/debug.c"
 
 typedef struct {
 	const char *type;
@@ -90,6 +91,7 @@ static R2Plugins plugins[] = {
 	{ "anal", &Radare_plugin_anal },
 	{ "bin", &Radare_plugin_bin },
 	{ "io", &Radare_plugin_io },
+	{ "debug", &Radare_plugin_debug },
 	{ NULL }
 };
 
